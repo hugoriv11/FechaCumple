@@ -47,7 +47,7 @@ console.table(list.map(({
 // Get average age
 /**Explicar porque esta bueno */
 
-console.log("Average age %i", list.reduce((sum, {
+console.log("Average age %i TOMANDO EN CUENTA FECHA SETEADA EN CODIGO DE CREACION DE PERSONAS", list.reduce((sum, {
     birthday
 }) => {
     var ageDifMs = Date.now() - birthday;
@@ -108,10 +108,9 @@ function getAge() {
     }
 }
 
-console.log("Average age %i", list.reduce((sum, {
+console.log("Average age %i TOMANDO EN CUENTA FECHA DEL PROMPT Y FUNCION getAge y el error del comentario en dicha funcion", list.reduce((sum, {
     birthday
 }) => getAge(birthday) + sum, 0) / list.length);
-
 
 /**     =========================
  * 
